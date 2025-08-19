@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import auntieLogoUrl from "@assets/Auntie_logo-03_1755639830827.png";
+import auntieLogoUrl from "../assets/auntie-logo.png";
 
 export default function HeroSection() {
   return (

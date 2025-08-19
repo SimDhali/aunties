@@ -6,12 +6,7 @@ export default function Header() {
     <header className="relative z-50 bg-lime border-b-4 border-navy" data-testid="header">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          {/* Logo */}
-          <div className="text-3xl md:text-4xl font-black text-navy" data-testid="logo">
-            AUNTIE'S SAUCES
-          </div>
-          
-          {/* Navigation - Desktop */}
+          {/* Navigation - Desktop (Left Side) */}
           <nav className="hidden md:flex space-x-8" data-testid="nav-desktop">
             <Button variant="ghost" className="text-lg font-semibold text-navy hover:text-turquoise hover:bg-transparent transition-colors duration-300" data-testid="nav-products">
               PRODUCTS
@@ -24,7 +19,12 @@ export default function Header() {
             </Button>
           </nav>
           
-          {/* Icons */}
+          {/* Logo - Centered */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 text-3xl md:text-4xl font-black text-navy" data-testid="logo">
+            AUNTIE'S SAUCES
+          </div>
+          
+          {/* Icons - Right Side */}
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="icon" className="text-navy hover:text-turquoise hover:bg-transparent" data-testid="button-search">
               <Search className="h-6 w-6" />

@@ -1,16 +1,22 @@
 import { Button } from "@/components/ui/button";
 import auntieLogoUrl from "@assets/Auntie_logo-03_1755639830827.png";
+import auntiesSaucesLogoUrl from "@assets/aunties-sauces-logo.png";
+import cartoonChiliUrl from "@assets/generated_images/Cartoon_chili_character_e9e9635c.png";
+import cartoonMangoUrl from "@assets/generated_images/Cartoon_mango_character_5001c336.png";
 
 export default function HeroSection() {
   return (
     <section className="relative bg-lime geometric-pattern-dots min-h-screen flex items-center curved-bottom" data-testid="hero-section">
-      {/* Floating geometric shapes */}
+      {/* Floating cartoon chillis and mangoes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-coral rounded-full opacity-60 floating"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 bg-lavender rounded-full opacity-70 floating" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-20 left-1/3 w-40 h-40 bg-peach rounded-full opacity-50 floating" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-10 right-10 w-28 h-28 bg-sage rounded-full opacity-80 floating" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-turquoise rounded-full opacity-60 floating" style={{ animationDelay: '1.5s' }}></div>
+        <img src={cartoonChiliUrl} alt="Cartoon Chili" className="absolute top-20 left-10 w-20 h-20 floating" />
+        <img src={cartoonMangoUrl} alt="Cartoon Mango" className="absolute top-40 right-20 w-16 h-16 floating" style={{ animationDelay: '1s' }} />
+        <img src={cartoonChiliUrl} alt="Cartoon Chili" className="absolute bottom-20 left-1/3 w-24 h-24 floating" style={{ animationDelay: '2s' }} />
+        <img src={cartoonMangoUrl} alt="Cartoon Mango" className="absolute bottom-10 right-10 w-18 h-18 floating" style={{ animationDelay: '0.5s' }} />
+        <img src={cartoonChiliUrl} alt="Cartoon Chili" className="absolute top-1/3 left-1/4 w-14 h-14 floating" style={{ animationDelay: '1.5s' }} />
+        <img src={cartoonMangoUrl} alt="Cartoon Mango" className="absolute top-60 right-1/3 w-20 h-20 floating" style={{ animationDelay: '2.5s' }} />
+        <img src={cartoonChiliUrl} alt="Cartoon Chili" className="absolute bottom-40 left-20 w-16 h-16 floating" style={{ animationDelay: '3s' }} />
+        <img src={cartoonMangoUrl} alt="Cartoon Mango" className="absolute top-1/2 right-20 w-22 h-22 floating" style={{ animationDelay: '0.8s' }} />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">

@@ -90,6 +90,12 @@ export default function HeroSection() {
         
         {/* Tagline */}
         <div className="text-center">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-navy mb-6 leading-tight" data-testid="text-tagline">
+            Condiments for<br />the best of times.<br />
+            <span className="text-turquoise">Condiments for</span><br />
+            <span className="text-turquoise">the family.</span>
+          </h2>
+          
           {/* Call to Action Speech Bubble */}
           <div className="relative inline-block bg-white rounded-full px-6 md:px-8 py-4 shadow-2xl transform rotate-3 mt-8" data-testid="cta-bubble">
             <span className="text-xl md:text-2xl font-bold text-navy">Sweet adventures await!</span>

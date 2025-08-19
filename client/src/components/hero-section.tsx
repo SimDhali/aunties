@@ -20,7 +20,7 @@ export default function HeroSection() {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        {/* Brand Logo */}
+        {/* Brand Logo and Title */}
         <div className="text-center mb-12">
           <div className="mb-8">
             <img 
@@ -30,15 +30,9 @@ export default function HeroSection() {
               data-testid="img-auntie-logo"
             />
           </div>
-          <div className="mb-8">
-            <img 
-              src={auntiesSaucesLogoUrl} 
-              alt="Auntie's Sauces" 
-              className="mx-auto w-64 md:w-96 lg:w-[500px] h-auto floating"
-              data-testid="img-aunties-sauces-logo"
-              style={{ animationDelay: '0.3s' }}
-            />
-          </div>
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-navy mb-8 tracking-tight text-shadow" data-testid="text-hero-title">
+            AUNTIE'S<br />SAUCES
+          </h1>
         </div>
         
         {/* Product Showcase Grid */}

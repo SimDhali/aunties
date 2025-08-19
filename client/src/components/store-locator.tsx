@@ -5,8 +5,15 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 export default function StoreLocator() {
   return (
-    <section className="bg-mint py-20" data-testid="store-locator">
-      <div className="container mx-auto px-4">
+    <section className="bg-peach py-20 relative geometric-pattern-triangles curved-top curved-bottom" data-testid="store-locator">
+      {/* Floating geometric shapes */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-40 left-10 w-28 h-28 bg-turquoise rounded-full floating"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-lavender rounded-full floating" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 right-1/3 w-20 h-20 bg-mint rounded-full floating" style={{ animationDelay: '2s' }}></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-navy mb-8" data-testid="text-section-title">
             Find your nearest stockist

@@ -25,12 +25,16 @@
   --ring: hsl(181, 100%, 56%);
   --radius: 1rem;
   
-  /* Custom Brand Colors */
-  --lime: hsl(68, 85%, 63%);
-  --turquoise: hsl(181, 100%, 56%);
-  --bright-yellow: hsl(58, 85%, 63%);
+  /* Custom Brand Colors - Pastel Palette */
+  --lime: hsl(68, 70%, 75%);
+  --turquoise: hsl(181, 80%, 70%);
+  --bright-yellow: hsl(58, 70%, 80%);
   --navy: hsl(216, 54%, 11%);
-  --mint: hsl(160, 100%, 80%);
+  --mint: hsl(160, 60%, 85%);
+  --coral: hsl(11, 80%, 75%);
+  --lavender: hsl(280, 60%, 85%);
+  --peach: hsl(20, 80%, 80%);
+  --sage: hsl(100, 30%, 75%);
   
   --font-sans: 'Inter', sans-serif;
   --font-serif: Georgia, serif;
@@ -71,8 +75,52 @@
 
 @layer components {
   .hero-pattern {
-    background-image: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
-    background-size: 30px 30px;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  .geometric-pattern-dots {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.4) 8px, transparent 10px);
+    background-size: 60px 60px;
+  }
+  
+  .geometric-pattern-triangles {
+    background-image: 
+      linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 30%, rgba(255,255,255,0.1) 70%, transparent 70%),
+      linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.1) 30%, rgba(255,255,255,0.1) 70%, transparent 70%);
+    background-size: 80px 80px;
+  }
+  
+  .geometric-pattern-diamonds {
+    background-image: 
+      linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.2) 75%),
+      linear-gradient(-45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.2) 75%);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+  }
+  
+  .curved-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: inherit;
+    clip-path: ellipse(100% 100% at 50% 0%);
+    transform: translateY(40px);
+  }
+  
+  .curved-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: inherit;
+    clip-path: ellipse(100% 100% at 50% 100%);
+    transform: translateY(-40px);
   }
   
   .floating {

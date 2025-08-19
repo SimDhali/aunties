@@ -1,11 +1,29 @@
 import { Button } from "@/components/ui/button";
+import auntieLogoUrl from "@assets/Auntie_logo-03_1755639830827.png";
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-lime hero-pattern min-h-screen flex items-center" data-testid="hero-section">
-      <div className="container mx-auto px-4">
-        {/* Brand Title */}
+    <section className="relative bg-lime geometric-pattern-dots min-h-screen flex items-center curved-bottom" data-testid="hero-section">
+      {/* Floating geometric shapes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-coral rounded-full opacity-60 floating"></div>
+        <div className="absolute top-40 right-20 w-24 h-24 bg-lavender rounded-full opacity-70 floating" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-20 left-1/3 w-40 h-40 bg-peach rounded-full opacity-50 floating" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-10 right-10 w-28 h-28 bg-sage rounded-full opacity-80 floating" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-turquoise rounded-full opacity-60 floating" style={{ animationDelay: '1.5s' }}></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Brand Logo and Title */}
         <div className="text-center mb-12">
+          <div className="mb-8">
+            <img 
+              src={auntieLogoUrl} 
+              alt="Auntie's Logo" 
+              className="mx-auto w-32 md:w-48 lg:w-56 h-auto floating"
+              data-testid="img-auntie-logo"
+            />
+          </div>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-navy mb-8 tracking-tight text-shadow" data-testid="text-hero-title">
             AUNTIE'S<br />SAUCES
           </h1>

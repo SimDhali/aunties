@@ -3,8 +3,15 @@ import { Users } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section className="bg-lime py-20" data-testid="about-section">
-      <div className="container mx-auto px-4 text-center">
+    <section className="bg-coral py-20 relative geometric-pattern-diamonds curved-top curved-bottom" data-testid="about-section">
+      {/* Floating geometric shapes */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-20 left-20 w-24 h-24 bg-mint rounded-full floating"></div>
+        <div className="absolute bottom-20 right-20 w-32 h-32 bg-turquoise rounded-full floating" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/3 right-10 w-16 h-16 bg-sage rounded-full floating" style={{ animationDelay: '0.5s' }}></div>
+      </div>
+      
+      <div className="container mx-auto px-4 text-center relative z-10">
         {/* Auntie Icon */}
         <div className="mb-8" data-testid="auntie-icon">
           <div className="w-24 h-24 bg-navy rounded-full mx-auto flex items-center justify-center">

@@ -13,11 +13,8 @@ export default function Header() {
           
           {/* Navigation - Desktop */}
           <nav className="hidden md:flex space-x-8" data-testid="nav-desktop">
-            <Button variant="ghost" className="text-lg font-semibold text-navy hover:text-turquoise hover:bg-transparent transition-colors duration-300" data-testid="nav-sauces">
-              SAUCES
-            </Button>
-            <Button variant="ghost" className="text-lg font-semibold text-navy hover:text-turquoise hover:bg-transparent transition-colors duration-300" data-testid="nav-recipes">
-              RECIPES
+            <Button variant="ghost" className="text-lg font-semibold text-navy hover:text-turquoise hover:bg-transparent transition-colors duration-300" data-testid="nav-products">
+              PRODUCTS
             </Button>
             <Button variant="ghost" className="text-lg font-semibold text-navy hover:text-turquoise hover:bg-transparent transition-colors duration-300" data-testid="nav-blog">
               BLOG

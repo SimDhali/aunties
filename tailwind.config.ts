@@ -61,12 +61,16 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        // Custom brand colors
+        // Custom brand colors - Pastel Palette
         lime: "var(--lime)",
         turquoise: "var(--turquoise)",
         "bright-yellow": "var(--bright-yellow)",
         navy: "var(--navy)",
         mint: "var(--mint)",
+        coral: "var(--coral)",
+        lavender: "var(--lavender)",
+        peach: "var(--peach)",
+        sage: "var(--sage)",
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

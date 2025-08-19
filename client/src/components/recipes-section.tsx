@@ -23,8 +23,15 @@ export default function RecipesSection() {
   ];
 
   return (
-    <section className="bg-turquoise py-20" data-testid="recipes-section">
-      <div className="container mx-auto px-4">
+    <section className="bg-lavender py-20 relative geometric-pattern-dots curved-top curved-bottom" data-testid="recipes-section">
+      {/* Floating geometric shapes */}
+      <div className="absolute inset-0 opacity-25 pointer-events-none">
+        <div className="absolute top-20 right-20 w-30 h-30 bg-coral rounded-full floating"></div>
+        <div className="absolute bottom-40 left-10 w-24 h-24 bg-mint rounded-full floating" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/3 w-18 h-18 bg-sage rounded-full floating" style={{ animationDelay: '1.5s' }}></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-navy mb-4" data-testid="text-section-title">
             #EatWithAunties

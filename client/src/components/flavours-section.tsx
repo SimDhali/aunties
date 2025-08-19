@@ -34,13 +34,14 @@ export default function FlavoursSection() {
   ];
 
   return (
-    <section className="bg-turquoise py-20 relative overflow-hidden" data-testid="flavours-section">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-white rounded-full"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 bg-white rounded-full"></div>
-        <div className="absolute bottom-20 left-1/3 w-40 h-40 bg-white rounded-full"></div>
-        <div className="absolute bottom-10 right-10 w-28 h-28 bg-white rounded-full"></div>
+    <section className="bg-turquoise py-20 relative overflow-hidden geometric-pattern-dots curved-top curved-bottom" data-testid="flavours-section">
+      {/* Floating geometric shapes */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-coral rounded-full floating"></div>
+        <div className="absolute top-40 right-20 w-24 h-24 bg-peach rounded-full floating" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-20 left-1/3 w-40 h-40 bg-lavender rounded-full floating" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-10 right-10 w-28 h-28 bg-bright-yellow rounded-full floating" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-mint rounded-full floating" style={{ animationDelay: '1.5s' }}></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">

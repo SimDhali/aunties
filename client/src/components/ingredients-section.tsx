@@ -27,8 +27,15 @@ export default function IngredientsSection() {
   ];
 
   return (
-    <section className="bg-mint py-20 relative" data-testid="ingredients-section">
-      <div className="container mx-auto px-4">
+    <section className="bg-mint py-20 relative geometric-pattern-triangles curved-top curved-bottom" data-testid="ingredients-section">
+      {/* Floating geometric shapes */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-20 right-10 w-28 h-28 bg-coral rounded-full floating"></div>
+        <div className="absolute bottom-40 left-20 w-36 h-36 bg-lavender rounded-full floating" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 right-1/3 w-20 h-20 bg-peach rounded-full floating" style={{ animationDelay: '2s' }}></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-navy mb-8" data-testid="text-section-title">
             What we're made of

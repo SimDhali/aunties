@@ -17,7 +17,7 @@ export default function HeroSection() {
       </div>
       
       {/* Bottom Section with Logo on Green Background - Like Billy's */}
-      <div className="relative z-10 bg-lime py-8">
+      <div className="relative z-10 bg-lime py-8 wavy-cloud-bottom">
         <div className="container mx-auto px-4 text-center">
           <img 
             src={auntieLogoUrl} 

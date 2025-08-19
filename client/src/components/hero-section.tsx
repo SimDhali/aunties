@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import auntieLogoUrl from "../assets/auntie-logo.png";
+import auntiesSaucesLogoUrl from "../assets/aunties-sauces-logo.png";
 
 export default function HeroSection() {
   return (
@@ -24,9 +25,12 @@ export default function HeroSection() {
               data-testid="img-auntie-logo"
             />
           </div>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-navy mb-8 tracking-tight text-shadow" data-testid="text-hero-title">
-            AUNTIE'S<br />SAUCES
-          </h1>
+          <img 
+            src={auntiesSaucesLogoUrl} 
+            alt="Auntie's Sauces - est. 1960" 
+            className="mx-auto w-64 md:w-80 lg:w-96 h-auto mb-8"
+            data-testid="img-aunties-sauces-title"
+          />
         </div>
         
         {/* Product Showcase Grid */}

@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Navigation - Desktop (Left Side) */}
-          <nav className="hidden md:flex space-x-8" data-testid="nav-desktop">
+          <nav className="hidden md:flex space-x-8 ml-[-87px] mr-[-87px]" data-testid="nav-desktop">
             <Button variant="ghost" className="text-lg font-semibold text-navy hover:text-turquoise hover:bg-transparent transition-colors duration-300" data-testid="nav-products">
               PRODUCTS
             </Button>

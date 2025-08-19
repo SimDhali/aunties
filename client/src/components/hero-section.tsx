@@ -25,12 +25,7 @@ export default function HeroSection() {
               data-testid="img-auntie-logo"
             />
           </div>
-          <img 
-            src={auntiesSaucesLogoUrl} 
-            alt="Auntie's Sauces - est. 1960" 
-            className="mx-auto w-64 md:w-80 lg:w-96 h-auto mb-8"
-            data-testid="img-aunties-sauces-title"
-          />
+          
         </div>
         
         {/* Product Showcase Grid */}

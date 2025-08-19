@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(216, 54%, 11%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(216, 54%, 11%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(216, 54%, 11%);
+  --primary: hsl(181, 100%, 56%);
+  --primary-foreground: hsl(216, 54%, 11%);
+  --secondary: hsl(216, 54%, 11%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(240, 1.9608%, 90%);
+  --muted-foreground: hsl(216, 54%, 11%);
+  --accent: hsl(181, 100%, 56%);
+  --accent-foreground: hsl(216, 54%, 11%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(181, 100%, 56%);
+  --radius: 1rem;
+  
+  /* Custom Brand Colors */
+  --lime: hsl(68, 85%, 63%);
+  --turquoise: hsl(181, 100%, 56%);
+  --bright-yellow: hsl(58, 85%, 63%);
+  --navy: hsl(216, 54%, 11%);
+  --mint: hsl(160, 100%, 80%);
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+}
+
+.dark {
+  --background: hsl(216, 54%, 11%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(216, 50%, 15%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(216, 54%, 11%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(181, 100%, 56%);
+  --primary-foreground: hsl(216, 54%, 11%);
+  --secondary: hsl(0, 0%, 100%);
+  --secondary-foreground: hsl(216, 54%, 11%);
+  --muted: hsl(216, 50%, 20%);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --accent: hsl(181, 100%, 56%);
+  --accent-foreground: hsl(216, 54%, 11%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(216, 50%, 25%);
+  --input: hsl(216, 50%, 25%);
+  --ring: hsl(181, 100%, 56%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .hero-pattern {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+  
+  .floating {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .wiggle {
+    animation: wiggle 0.5s ease-in-out;
+  }
+  
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-10px); 
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { 
+    transform: rotate(0deg); 
+  }
+  25% { 
+    transform: rotate(1deg); 
+  }
+  75% { 
+    transform: rotate(-1deg); 
+  }
+}

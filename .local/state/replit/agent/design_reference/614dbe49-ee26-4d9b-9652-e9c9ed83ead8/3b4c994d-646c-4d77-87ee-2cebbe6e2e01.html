@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUNTIE'S SAUCES - All Natural Indian-Inspired Condiments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime': '#D4F052',
+                        'turquoise': '#40E0D0',
+                        'bright-yellow': '#F0F052',
+                        'navy': '#1A1A2E',
+                        'mint': '#98FFE0'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-pattern { background-image: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 30px 30px; }
+        .floating { animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .wiggle { animation: wiggle 0.5s ease-in-out; }
+        @keyframes wiggle { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(1deg); } 75% { transform: rotate(-1deg); } }
+        .product-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .product-card:hover { transform: translateY(-10px) rotate(2deg); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+    </style>
+</head>
+
+<body class="bg-lime text-navy overflow-x-hidden">
+    <!-- @COMPONENT: Header -->
+    <header class="relative z-50 bg-lime border-b-4 border-navy">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="text-4xl font-black text-navy">
+                    AUNTIE'S SAUCES
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-lg font-semibold text-navy hover:text-turquoise transition-colors duration-300">SAUCES</a>
+                    <a href="#" class="text-lg font-semibold text-navy hover:text-turquoise transition-colors duration-300">RECIPES</a>
+                    <a href="#" class="text-lg font-semibold text-navy hover:text-turquoise transition-colors duration-300">BLOG</a>
+                    <a href="#" class="text-lg font-semibold text-navy hover:text-turquoise transition-colors duration-300">ABOUT</a>
+                </nav>
+                
+                <!-- Icons -->
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-search text-2xl text-navy hover:text-turquoise cursor-pointer transition-colors duration-300"></i>
+                    <i class="fas fa-user text-2xl text-navy hover:text-turquoise cursor-pointer transition-colors duration-300"></i>
+                    <i class="fas fa-shopping-cart text-2xl text-navy hover:text-turquoise cursor-pointer transition-colors duration-300"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="relative bg-lime hero-pattern min-h-screen flex items-center">
+        <div class="container mx-auto px-4">
+            <!-- Brand Title -->
+            <div class="text-center mb-12">
+                <h1 class="text-8xl md:text-9xl font-black text-navy mb-8 tracking-tight">
+                    AUNTIE'S<br>SAUCES
+                </h1>
+            </div>
+            
+            <!-- Product Showcase Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12">
+                <!-- Indian Ketchup -->
+                <!-- High-quality image of Indian condiment bottles in vibrant red packaging -->
+                <img src="https://pixabay.com/get/g99edf0b9011959b10d81d4548afbc080d8c80f4764f42184b89f5330c3b0ca2da25634575addc74829c8d7dd6a69c7b08aaed24bbc6a0a368697687fac88aa88_1280.jpg" alt="Indian Ketchup" class="rounded-xl shadow-lg transform rotate-12 floating" />
+                
+                <!-- Chilli Mango -->
+                <!-- Vibrant orange and red chili mango sauce bottle with tropical design -->
+                <img src="https://pixabay.com/get/g88296d40f21c0a15bbd564d9d864ef2c92e41cca3e8ff28af9805d9cbeabe379fbd9be630a5372c89997df122386234e382f8254ba6b20a66fadd839a5014847_1280.jpg" alt="Chilli Mango Sauce" class="rounded-xl shadow-lg transform -rotate-6 floating" style="animation-delay: 0.5s;" />
+                
+                <!-- Tamarind -->
+                <!-- Dark brown tamarind sauce in elegant packaging with earthy tones -->
+                <img src="https://pixabay.com/get/gd747e86766dd9a701f8e5fff9418f1e256f1f718371e9c1c1fb0abf983903493a4ce163c6c108391ce722c21c2d091e53334db85ebfc32c50102a3e26f0e25de_1280.jpg" alt="Tamarind Sauce" class="rounded-xl shadow-lg transform rotate-6 floating" style="animation-delay: 1s;" />
+                
+                <!-- Ginger & Coriander -->
+                <!-- Fresh green sauce bottle with herb and spice imagery -->
+                <img src="https://pixabay.com/get/g660b5365bef05ff0e39e825b73311f4c2efff73334f534313631edcccb5561e27e457ebc9f7eefb494fd7a2c3b4ec2c00f337b99f527d1d6745b04ebcf70803a_1280.jpg" alt="Ginger & Coriander Sauce" class="rounded-xl shadow-lg transform -rotate-12 floating" style="animation-delay: 1.5s;" />
+                
+                <!-- Additional product variations -->
+                <!-- Colorful spice bottles arranged artistically -->
+                <img src="https://pixabay.com/get/g653f06e92528730fb3c7dcaa5a8e98660f6495e47a09a35337695846c82cf651a09aa6f1fe2d9d660aa94a8729f8dff0b012f813eaa312f71e4686fe7ff16fd5_1280.jpg" alt="Sauce Collection" class="rounded-xl shadow-lg transform rotate-3 floating hidden md:block" style="animation-delay: 2s;" />
+                
+                <!-- Indian cooking spices and condiments display -->
+                <img src="https://pixabay.com/get/g29e44e92b19bce5724eed7e63efeec49529eb7de915be767584b71c758c724bb0fdcd51150ed62b1ceab9161b06838964c4480693a50f291431e20c590f0f769_1280.jpg" alt="Spice Collection" class="rounded-xl shadow-lg transform -rotate-8 floating hidden lg:block" style="animation-delay: 2.5s;" />
+            </div>
+            
+            <!-- Tagline -->
+            <div class="text-center">
+                <h2 class="text-4xl md:text-6xl font-black text-navy mb-6">
+                    Condiments for<br>the best of times.<br>
+                    <span class="text-turquoise">Condiments for</span><br>
+                    <span class="text-turquoise">the family.</span>
+                </h2>
+                
+                <!-- Call to Action Speech Bubble -->
+                <div class="relative inline-block bg-white rounded-full px-8 py-4 shadow-2xl transform rotate-3">
+                    <span class="text-2xl font-bold text-navy">Sweet adventures await!</span>
+                    <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+                        <div class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Quality Features Banner -->
+    <section class="bg-bright-yellow py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center space-x-4 md:space-x-12 text-navy">
+                <div class="flex items-center space-x-2 mb-2 md:mb-0">
+                    <i class="fas fa-leaf text-xl"></i>
+                    <span class="font-semibold">All Natural</span>
+                </div>
+                <div class="flex items-center space-x-2 mb-2 md:mb-0">
+                    <i class="fas fa-seedling text-xl"></i>
+                    <span class="font-semibold">No Nasty Stuff</span>
+                </div>
+                <div class="flex items-center space-x-2 mb-2 md:mb-0">
+                    <i class="fas fa-heart text-xl"></i>
+                    <span class="font-semibold">Handmade</span>
+                </div>
+                <div class="flex items-center space-x-2 mb-2 md:mb-0">
+                    <i class="fas fa-star text-xl"></i>
+                    <span class="font-semibold">Original Recipes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Quality Features Banner -->
+
+    <!-- @COMPONENT: Our Flavours Section -->
+    <section class="bg-turquoise py-20 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-10 w-32 h-32 bg-white rounded-full"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 bg-white rounded-full"></div>
+            <div class="absolute bottom-20 left-1/3 w-40 h-40 bg-white rounded-full"></div>
+            <div class="absolute bottom-10 right-10 w-28 h-28 bg-white rounded-full"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-6xl md:text-7xl font-black text-navy mb-4">Our flavours</h2>
+                <p class="text-2xl text-navy font-medium">We're not here to eat spiders!</p>
+            </div>
+            
+            <!-- Product Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Indian Ketchup -->
+                <div class="product-card bg-white rounded-3xl p-6 shadow-xl">
+                    <!-- Traditional Indian ketchup with rich tomato and spice blend -->
+                    <img src="https://pixabay.com/get/gcca36dd144c32b3dac3d0c7c6163572edc6c190e67b96b3eaec9713a83ae5f57a3b92e40e390dc76b15cedc1d470d4ad65ba35ca28b1f1a17d9ddebb490efe10_1280.jpg" alt="Indian Ketchup" class="w-full h-64 object-cover rounded-xl mb-6" />
+                    <h3 class="text-2xl font-bold text-navy mb-3">Indian Ketchup</h3>
+                    <p class="text-navy mb-4">Rich, tangy, and perfectly spiced - those are proper adjectives to define this amazing condiment.</p>
+                    <button class="w-full bg-navy text-white py-3 rounded-full font-bold hover:bg-turquoise hover:text-navy transition-all duration-300">SHOP NOW</button>
+                </div>
+                
+                <!-- Chilli Mango -->
+                <div class="product-card bg-white rounded-3xl p-6 shadow-xl">
+                    <!-- Sweet and spicy mango chutney with vibrant orange color -->
+                    <img src="https://pixabay.com/get/gd1dd237b7c21f0fd659fb273ac789a4b7c98b2913f9fc167f5430f79341ecb5fa1a64b0b9dbf2359ec8c36a32123f11a3f9d761b753707fa2634aca530f4afcd_1280.jpg" alt="Chilli Mango Sauce" class="w-full h-64 object-cover rounded-xl mb-6" />
+                    <h3 class="text-2xl font-bold text-navy mb-3">Chilli Mango</h3>
+                    <p class="text-navy mb-4">Sweet meets heat in this tropical fusion sauce that brings sunshine to every meal.</p>
+                    <button class="w-full bg-navy text-white py-3 rounded-full font-bold hover:bg-turquoise hover:text-navy transition-all duration-300">SHOP NOW</button>
+                </div>
+                
+                <!-- Tamarind -->
+                <div class="product-card bg-white rounded-3xl p-6 shadow-xl">
+                    <!-- Dark tamarind sauce with authentic Indian flavor profile -->
+                    <img src="https://pixabay.com/get/gc54725663ae6b65254ae49971c02e90c1281dfd51c6399def6929e3423b19bb20711f1817c47a431ae9eb324b662bee26af19104232d9e3fd475b76f7c97ba09_1280.jpg" alt="Tamarind Sauce" class="w-full h-64 object-cover rounded-xl mb-6" />
+                    <h3 class="text-2xl font-bold text-navy mb-3">Tamarind</h3>
+                    <p class="text-navy mb-4">A classic tangy sauce with deep, complex flavors that enhance any dish with authentic taste.</p>
+                    <button class="w-full bg-navy text-white py-3 rounded-full font-bold hover:bg-turquoise hover:text-navy transition-all duration-300">SHOP NOW</button>
+                </div>
+                
+                <!-- Ginger & Coriander -->
+                <div class="product-card bg-white rounded-3xl p-6 shadow-xl">
+                    <!-- Fresh green herb sauce with ginger and coriander blend -->
+                    <img src="https://pixabay.com/get/g78e559b86568aaac9295844c185b93f4c93f6dec994ee59e66dac1a021ebbfd4640325c4affdd174fddac2e69329fbc990b1bf60f820984e8f4abe7f224aa9b2_1280.jpg" alt="Ginger & Coriander Sauce" class="w-full h-64 object-cover rounded-xl mb-6" />
+                    <h3 class="text-2xl font-bold text-navy mb-3">Ginger & Coriander</h3>
+                    <p class="text-navy mb-4">Fresh, zesty, and aromatic - this vibrant sauce brings garden-fresh flavors to your table.</p>
+                    <button class="w-full bg-navy text-white py-3 rounded-full font-bold hover:bg-turquoise hover:text-navy transition-all duration-300">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Our Flavours Section -->
+
+    <!-- @COMPONENT: What We're Made Of -->
+    <section class="bg-mint py-20 relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-6xl md:text-7xl font-black text-navy mb-8">What we're made of</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Central Product Image -->
+                <div class="text-center">
+                    <!-- Large detailed shot of Auntie's sauce bottle with ingredients around it -->
+                    <img src="https://pixabay.com/get/g44fbc6520d803604d7c733fbff0b3426de00fd999445fb13aa78e6b7abe24b6dfba30b3151eed396c52197d611d500fc6ded8b10c395eab521add69159082922_1280.jpg" alt="Auntie's Sauce with Ingredients" class="mx-auto rounded-3xl shadow-2xl transform rotate-3" />
+                </div>
+                
+                <!-- Feature Points Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-bold text-navy mb-3">Made with 100% ethically-sourced ingredients</h4>
+                        <p class="text-navy">Our sauces are crafted using only the finest, ethically-sourced ingredients, ensuring every bottle supports sustainable farming.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-bold text-navy mb-3">Bold and unique flavor combinations</h4>
+                        <p class="text-navy">From tangy raspberry crunch to spicy chilli caramel, Auntie's offers flavors you won't find on supermarket shelves.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-bold text-navy mb-3">All-natural, high-quality ingredients</h4>
+                        <p class="text-navy">We use only pure, natural ingredients—no artificial preservatives, colors, or flavors—so you can taste the difference in every bite.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-bold text-navy mb-3">Small batch, handcrafted perfection</h4>
+                        <p class="text-navy">Each sauce is made in small batches, ensuring the highest quality and attention to detail in every bite.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-bold text-navy mb-3">Eco-friendly packaging</h4>
+                        <p class="text-navy">Our packaging is not just fun, but also 100% recyclable, helping you enjoy your sauce with a clear conscience.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-bold text-navy mb-3">Supporting sauce makers</h4>
+                        <p class="text-navy">Every purchase of Auntie's Sauces contributes to fair wages and better living conditions for sauce makers around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: What We're Made Of -->
+
+    <!-- @COMPONENT: About Auntie Section -->
+    <section class="bg-lime py-20">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Auntie Icon -->
+            <div class="mb-8">
+                <div class="w-24 h-24 bg-navy rounded-full mx-auto flex items-center justify-center">
+                    <i class="fas fa-user-friends text-3xl text-lime"></i>
+                </div>
+            </div>
+            
+            <h2 class="text-5xl md:text-6xl font-black text-navy mb-8">Auntie is on a mission</h2>
+            <p class="text-2xl text-navy mb-8 max-w-3xl mx-auto">
+                To bring authentic Indian flavors to every kitchen, using traditional recipes passed down through generations.
+            </p>
+            
+            <button class="bg-turquoise text-navy px-12 py-4 rounded-full text-xl font-bold hover:bg-navy hover:text-turquoise transition-all duration-300 transform hover:scale-105">
+                Who is Auntie?
+            </button>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Auntie Section -->
+
+    <!-- @COMPONENT: Recipes Section -->
+    <section class="bg-turquoise py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-6xl md:text-7xl font-black text-navy mb-4">#EatWithAunties</h2>
+                <p class="text-2xl text-navy font-medium">Easy recipes to try at home!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Recipe Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Indian cheese toast with golden melted cheese and herbs -->
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Greg's Tamarind Cheese on Toast" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Greg's Tamarind Cheese on Toast</h3>
+                        <p class="text-navy mb-4">A fusion twist on classic comfort food.</p>
+                        <button class="text-turquoise font-bold hover:underline">Try Recipe →</button>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Traditional rajma curry with kidney beans in rich tomato sauce -->
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Auntie's Punjabi Rajma for the family" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Auntie's Punjabi Rajma for the family</h3>
+                        <p class="text-navy mb-4">Traditional comfort food that brings families together.</p>
+                        <button class="text-turquoise font-bold hover:underline">Try Recipe →</button>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Colorful nachos with Indian spices and chutneys -->
+                    <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Indian-style Nachos" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Indian-style Nachos</h3>
+                        <p class="text-navy mb-4">East meets West in this delicious fusion snack.</p>
+                        <button class="text-turquoise font-bold hover:underline">Try Recipe →</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-navy text-turquoise px-12 py-4 rounded-full text-xl font-bold hover:bg-lime hover:text-navy transition-all duration-300 transform hover:scale-105">
+                    More Recipes
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Recipes Section -->
+
+    <!-- @COMPONENT: Store Locator -->
+    <section class="bg-mint py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black text-navy mb-8">Find your nearest stockist</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Search Form -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-lg font-semibold text-navy mb-3">Your location</label>
+                            <input type="text" placeholder="Enter your postcode or city" class="w-full p-4 border-2 border-gray-200 rounded-xl focus:border-turquoise focus:outline-none text-lg" data-mock="true" />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-lg font-semibold text-navy mb-3">Search radius</label>
+                            <select class="w-full p-4 border-2 border-gray-200 rounded-xl focus:border-turquoise focus:outline-none text-lg" data-mock="true">
+                                <option>10 mi</option>
+                                <option>25 mi</option>
+                                <option>50 mi</option>
+                                <option>100 mi</option>
+                                <option>200 mi</option>
+                                <option>500 mi</option>
+                            </select>
+                        </div>
+                        
+                        <button class="w-full bg-turquoise text-navy py-4 rounded-xl text-xl font-bold hover:bg-navy hover:text-turquoise transition-all duration-300">
+                            Find Stockists
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Map Placeholder -->
+                <div class="bg-gray-200 rounded-3xl h-96 flex items-center justify-center">
+                    <!-- Store locator map showing stockist locations -->
+                    <img src="https://images.unsplash.com/photo-1549317336-206569e8475c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Store Locator Map" class="w-full h-full object-cover rounded-3xl" />
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <h3 class="text-3xl font-black text-navy mb-4">Fancy stocking Auntie's?</h3>
+                <button class="bg-navy text-turquoise px-12 py-4 rounded-full text-xl font-bold hover:bg-turquoise hover:text-navy transition-all duration-300 transform hover:scale-105">
+                    Become a Stockist
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Store Locator -->
+
+    <!-- @COMPONENT: Newsletter Signup -->
+    <section class="bg-bright-yellow py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-5xl md:text-6xl font-black text-navy mb-8">Join the Family</h2>
+                <p class="text-2xl text-navy mb-8">Follow Us for more behind the scenes & recipes</p>
+                <p class="text-lg text-navy mb-12">Use #eatwithaunties to be featured on our feed</p>
+                
+                <div class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="email@example.com" class="flex-1 p-4 rounded-full border-2 border-navy focus:outline-none focus:border-turquoise text-lg" data-mock="true" />
+                    <button class="bg-navy text-bright-yellow px-8 py-4 rounded-full text-lg font-bold hover:bg-turquoise hover:text-navy transition-all duration-300">
+                        SUBSCRIBE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Newsletter Signup -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-navy py-20">
+        <div class="container mx-auto px-4">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-4xl font-black text-lime mb-6">AUNTIE'S SAUCES</div>
+                    <p class="text-turquoise text-lg mb-6">This is a demo store. Auntie's product shots designed by Switch.</p>
+                    
+                    <!-- Social Icons -->
+                    <div class="flex space-x-4">
+                        <i class="fab fa-facebook text-2xl text-turquoise hover:text-lime cursor-pointer transition-colors duration-300"></i>
+                        <i class="fab fa-instagram text-2xl text-turquoise hover:text-lime cursor-pointer transition-colors duration-300"></i>
+                        <i class="fab fa-snapchat text-2xl text-turquoise hover:text-lime cursor-pointer transition-colors duration-300"></i>
+                        <i class="fab fa-tiktok text-2xl text-turquoise hover:text-lime cursor-pointer transition-colors duration-300"></i>
+                        <i class="fab fa-youtube text-2xl text-turquoise hover:text-lime cursor-pointer transition-colors duration-300"></i>
+                        <i class="fab fa-whatsapp text-2xl text-turquoise hover:text-lime cursor-pointer transition-colors duration-300"></i>
+                    </div>
+                </div>
+                
+                <!-- Links Column 1 -->
+                <div>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-turquoise hover:text-lime transition-colors duration-300" data-mock="true">Sauces</a></li>
+                        <li><a href="#" class="text-turquoise hover:text-lime transition-colors duration-300" data-mock="true">Bundles</a></li>
+                        <li><a href="#" class="text-turquoise hover:text-lime transition-colors duration-300" data-mock="true">Blog</a></li>
+                        <li><a href="#" class="text-turquoise hover:text-lime transition-colors duration-300" data-mock="true">About</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links Column 2 -->
+                <div>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-turquoise hover:text-lime transition-colors duration-300" data-mock="true">Search</a></li>
+                        <li><a href="#" class="text-turquoise hover:text-lime transition-colors duration-300" data-mock="true">Contact</a></li>
+                        <li><a href="#" class="text-turquoise hover:text-lime transition-colors duration-300" data-mock="true">Returns</a></li>
+                        <li><a href="#" class="text-turquoise hover:text-lime transition-colors duration-300" data-mock="true">Shipping</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Payment Icons -->
+            <div class="flex flex-wrap justify-between items-center pt-8 border-t border-turquoise">
+                <div class="text-turquoise text-sm">© 2025, Auntie's Sauces. Powered by Shopify</div>
+                <div class="flex space-x-2 mt-4 md:mt-0">
+                    <div class="w-10 h-6 bg-blue-600 rounded text-white text-xs flex items-center justify-center">VISA</div>
+                    <div class="w-10 h-6 bg-red-600 rounded text-white text-xs flex items-center justify-center">MC</div>
+                    <div class="w-10 h-6 bg-blue-500 rounded text-white text-xs flex items-center justify-center">AMEX</div>
+                    <div class="w-10 h-6 bg-blue-700 rounded text-white text-xs flex items-center justify-center">PP</div>
+                    <div class="w-10 h-6 bg-black rounded text-white text-xs flex items-center justify-center">DB</div>
+                    <div class="w-10 h-6 bg-orange-500 rounded text-white text-xs flex items-center justify-center">DC</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement Shopify integration and e-commerce functionality
+        // TODO: Add product carousel interactions
+        // TODO: Implement store locator with real map API
+        // TODO: Add form validation and newsletter subscription
+        // TODO: Implement shopping cart functionality
+        
+        (function() {
+            // Simple hover effects for product cards
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.classList.add('wiggle');
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.classList.remove('wiggle');
+                });
+            });
+            
+            // Newsletter form placeholder validation
+            const newsletterForm = document.querySelector('input[type="email"]');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('focus', function() {
+                    this.style.borderColor = '#40E0D0';
+                });
+                
+                newsletterForm.addEventListener('blur', function() {
+                    this.style.borderColor = '#1A1A2E';
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

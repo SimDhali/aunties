@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aunties - All Natural Indian-Inspired Condiments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aunties-lime': '#84cc16',
+                        'aunties-cyan': '#06b6d4',
+                        'aunties-green': '#166534',
+                        'aunties-cream': '#fefce8',
+                        'aunties-brown': '#374151'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-aunties-cream text-aunties-brown font-sans">
+
+    <!-- Navigation -->
+    <!-- @COMPONENT: Navigation -->
+    <nav class="bg-aunties-lime p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <div class="text-2xl font-bold text-aunties-green">
+                    AUNTIES
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-aunties-green hover:text-aunties-brown transition-colors">SAUCES ▼</a>
+                    <a href="#" class="text-aunties-green hover:text-aunties-brown transition-colors">RECIPES</a>
+                    <a href="#" class="text-aunties-green hover:text-aunties-brown transition-colors">ABOUT</a>
+                    <a href="#" class="text-aunties-green hover:text-aunties-brown transition-colors">STOCKISTS</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-user text-aunties-green text-xl"></i>
+                <i class="fas fa-search text-aunties-green text-xl"></i>
+                <i class="fas fa-shopping-cart text-aunties-green text-xl"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- Hero Section -->
+    <!-- @COMPONENT: HeroSection -->
+    <section class="bg-aunties-lime min-h-screen relative overflow-hidden">
+        <div class="absolute inset-0">
+            <!-- Decorative circles -->
+            <div class="absolute top-20 left-10 w-32 h-32 bg-aunties-cyan rounded-full opacity-20"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 bg-white rounded-full opacity-30"></div>
+            <div class="absolute bottom-32 left-1/4 w-40 h-40 bg-aunties-green rounded-full opacity-15"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="text-center mb-16">
+                <h1 class="font-serif text-6xl md:text-8xl font-black text-aunties-green mb-8 leading-tight">
+                    AUNTIES<br>
+                    CONDIMENTS
+                </h1>
+                
+                <!-- Floating sauce bottles arrangement -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto my-16">
+                    <!-- Indian Ketchup -->
+                    <!-- Colorful Indian ketchup bottle with vibrant red and gold packaging -->
+                    <div class="transform hover:scale-105 transition-transform duration-300 bg-red-400 p-4 rounded-xl shadow-xl" data-mock="true">
+                        <img src="https://pixabay.com/get/g7cccaf6d75f904c2cd91de11a3143531da68ce5c51b66e0feded0b5edd5ddb40b9d75a55886ad2ff3233a86eaf19dd2cfb55695cea37efc268cc779eb9834ceb_1280.jpg" alt="Indian Ketchup" class="w-full h-64 object-cover rounded-lg mb-4" data-mock-image="true" data-implementation="Replace with actual Aunties Indian Ketchup product image">
+                        <div class="bg-white p-2 rounded text-center">
+                            <h3 class="font-bold text-sm">INDIAN KETCHUP</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Chilli Mango -->
+                    <!-- Tropical mango chili sauce in vibrant orange and yellow packaging -->
+                    <div class="transform hover:scale-105 transition-transform duration-300 bg-orange-400 p-4 rounded-xl shadow-xl" data-mock="true">
+                        <img src="https://pixabay.com/get/ga8d3079d7f554b636c38014e8b457234bd879512d70f202cd673b938c82c3b4245370128da67fefbf9a48626479682cb7db5c7b43f2479915309845f9a346818_1280.jpg" alt="Chilli Mango Sauce" class="w-full h-64 object-cover rounded-lg mb-4" data-mock-image="true" data-implementation="Replace with actual Aunties Chilli Mango product image">
+                        <div class="bg-white p-2 rounded text-center">
+                            <h3 class="font-bold text-sm">CHILLI MANGO</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Tamarind -->
+                    <!-- Rich brown tamarind sauce with earth-toned packaging -->
+                    <div class="transform hover:scale-105 transition-transform duration-300 bg-amber-600 p-4 rounded-xl shadow-xl" data-mock="true">
+                        <img src="https://pixabay.com/get/g18ed39efeaee944c2f139f2ad55ab0607f362cf19f8c210c7658d0dbb3e30b1b428add491ec409fc12c39c9eef222a2af25e8808d52182cfbdfff218cf4550fb_1280.jpg" alt="Tamarind Sauce" class="w-full h-64 object-cover rounded-lg mb-4" data-mock-image="true" data-implementation="Replace with actual Aunties Tamarind product image">
+                        <div class="bg-white p-2 rounded text-center">
+                            <h3 class="font-bold text-sm">TAMARIND</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Ginger & Coriander -->
+                    <!-- Fresh green ginger and coriander sauce with herb-inspired packaging -->
+                    <div class="transform hover:scale-105 transition-transform duration-300 bg-green-400 p-4 rounded-xl shadow-xl" data-mock="true">
+                        <img src="https://pixabay.com/get/gd6fbcb728e2b5bc0a136fe21adbbe3733ebd95e17dda3205035bb5d5806cad714904596cd16c3bf7e18bfdc166da2545bff8dd17da4c8e2efb7592867a1b03bd_1280.jpg" alt="Ginger Coriander Sauce" class="w-full h-64 object-cover rounded-lg mb-4" data-mock-image="true" data-implementation="Replace with actual Aunties Ginger & Coriander product image">
+                        <div class="bg-white p-2 rounded text-center">
+                            <h3 class="font-bold text-sm">GINGER & CORIANDER</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white inline-block px-8 py-4 rounded-full shadow-lg transform -rotate-2 mb-8">
+                    <p class="text-aunties-green font-bold text-xl">Sweet adventures await!</p>
+                </div>
+                
+                <h2 class="font-serif text-4xl md:text-6xl font-bold text-aunties-green mb-4">
+                    Condiments for<br>
+                    the best of times.<br>
+                    Condiments for<br>
+                    the worst of times.
+                </h2>
+                
+                <p class="text-aunties-green text-xl mb-8 max-w-2xl mx-auto">
+                    All natural Indian-inspired condiments made with Auntie's original recipes
+                </p>
+                
+                <button class="bg-aunties-green text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105" data-event="click:shopSauces">
+                    Shop Sauces
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- Product Quality Badges -->
+    <!-- @COMPONENT: QualityBadges -->
+    <section class="bg-aunties-lime py-8 border-b-4 border-aunties-green">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 text-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-leaf text-aunties-green text-xl"></i>
+                    <span class="text-aunties-green font-semibold">All natural</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-seedling text-aunties-green text-xl"></i>
+                    <span class="text-aunties-green font-semibold">Palm oil free</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-aunties-green text-xl"></i>
+                    <span class="text-aunties-green font-semibold">No nasty stuff</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart text-aunties-green text-xl"></i>
+                    <span class="text-aunties-green font-semibold">Low salt</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-certificate text-aunties-green text-xl"></i>
+                    <span class="text-aunties-green font-semibold">Non-GMO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: QualityBadges -->
+
+    <!-- Our Flavours Section -->
+    <!-- @COMPONENT: FlavoursSection -->
+    <section class="bg-aunties-cyan py-20 relative overflow-hidden">
+        <!-- Decorative sunburst background -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-96 h-96 md:w-[800px] md:h-[800px]">
+                <!-- Sunburst rays -->
+                <div class="absolute inset-0 opacity-20">
+                    <div class="absolute top-1/2 left-1/2 w-2 h-96 bg-white transform -translate-x-1/2 -translate-y-1/2 rotate-0"></div>
+                    <div class="absolute top-1/2 left-1/2 w-2 h-96 bg-white transform -translate-x-1/2 -translate-y-1/2 rotate-12"></div>
+                    <div class="absolute top-1/2 left-1/2 w-2 h-96 bg-white transform -translate-x-1/2 -translate-y-1/2 rotate-24"></div>
+                    <div class="absolute top-1/2 left-1/2 w-2 h-96 bg-white transform -translate-x-1/2 -translate-y-1/2 rotate-45"></div>
+                    <div class="absolute top-1/2 left-1/2 w-2 h-96 bg-white transform -translate-x-1/2 -translate-y-1/2 rotate-90"></div>
+                    <div class="absolute top-1/2 left-1/2 w-2 h-96 bg-white transform -translate-x-1/2 -translate-y-1/2 rotate-135"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-5xl md:text-7xl font-bold text-aunties-green mb-4">Our flavours</h2>
+                <p class="text-aunties-green text-xl">We're not here to eat spiders!</p>
+            </div>
+            
+            <!-- Featured Product Carousel -->
+            <div class="flex justify-center items-center mb-8">
+                <!-- Navigation arrows -->
+                <button class="bg-aunties-green text-white rounded-full w-12 h-12 flex items-center justify-center mr-8 hover:bg-opacity-80 transition-all">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <!-- Featured Product -->
+                <div class="bg-white p-8 rounded-3xl shadow-2xl max-w-md text-center">
+                    <!-- Vibrant display of Indian chili mango sauce with tropical garnishes -->
+                    <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500" alt="Featured Chilli Mango" class="w-64 h-80 object-cover rounded-2xl mx-auto mb-6" data-mock-image="true" data-implementation="Replace with actual featured product image">
+                    
+                    <h3 class="font-serif text-3xl font-bold text-aunties-green mb-2">Chilli Mango</h3>
+                    <p class="text-aunties-brown mb-6">Sweet, spicy, and delightfully tropical - the perfect balance of heat and fruit that will transport your taste buds to paradise.</p>
+                    
+                    <button class="bg-aunties-green text-white px-6 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all duration-300">
+                        SHOP NOW
+                    </button>
+                </div>
+                
+                <!-- Navigation arrows -->
+                <button class="bg-aunties-green text-white rounded-full w-12 h-12 flex items-center justify-center ml-8 hover:bg-opacity-80 transition-all">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FlavoursSection -->
+
+    <!-- What We're Made Of -->
+    <!-- @COMPONENT: IngredientsSection -->
+    <section class="bg-gradient-to-br from-aunties-lime to-green-400 py-20 relative overflow-hidden">
+        <!-- Decorative circles -->
+        <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-20 h-20 bg-white rounded-full opacity-30"></div>
+            <div class="absolute top-32 right-20 w-16 h-16 bg-white rounded-full opacity-20"></div>
+            <div class="absolute bottom-20 left-1/3 w-24 h-24 bg-white rounded-full opacity-25"></div>
+            <div class="absolute bottom-40 right-10 w-32 h-32 bg-white rounded-full opacity-15"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="font-serif text-5xl md:text-7xl font-bold text-aunties-green text-center mb-16">
+                What we're made of
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <!-- Left side features -->
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-aunties-green">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">Made with 100% ethically-sourced ingredients</h3>
+                        <p class="text-aunties-brown">Our condiments are crafted using only the finest, ethically-sourced ingredients, ensuring every bottle supports sustainable farming.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-aunties-green">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">All-natural, high-quality ingredients</h3>
+                        <p class="text-aunties-brown">We use only pure, natural ingredients—no artificial preservatives, colors, or flavors—so you can taste the difference in every piece.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-aunties-green">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">Eco-friendly packaging</h3>
+                        <p class="text-aunties-brown">Our packaging is not just fun, but also 100% recyclable, helping you enjoy condiments with a clear conscience.</p>
+                    </div>
+                </div>
+                
+                <!-- Center product image -->
+                <div class="flex justify-center">
+                    <!-- Large bottle of Indian condiment with traditional spices and herbs arranged around it -->
+                    <img src="https://pixabay.com/get/g4382c6eae3383fd545517d78a3e822453940c8388fda184f9f5853af78c6cb31e7b78d4f11f3224150bc76098196f54e46a8e3a0cb8525f3fcdcef08cb74cda7_1280.jpg" alt="Featured Sauce Bottle" class="w-80 h-96 object-cover rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300" data-mock-image="true" data-implementation="Replace with actual product hero image">
+                </div>
+                
+                <!-- Right side features -->
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-aunties-green">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">Bold and unique flavor combinations</h3>
+                        <p class="text-aunties-brown">From tangy raspberry crunch to spicy chili caramel, Auntie's offers flavors you won't find on supermarket shelves.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-aunties-green">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">Small batch, handcrafted perfection</h3>
+                        <p class="text-aunties-brown">Each bottle is made in small batches, ensuring the highest quality and attention to detail in every bite.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-aunties-green">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">Supporting spice farmers</h3>
+                        <p class="text-aunties-brown">Every purchase of Auntie's Condiments contributes to fair wages and better living conditions for spice farmers around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: IngredientsSection -->
+
+    <!-- About Auntie Section -->
+    <!-- @COMPONENT: AboutAuntieSection -->
+    <section class="bg-aunties-cream py-20">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Warm portrait of an Indian grandmother in traditional clothing smiling warmly -->
+            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Auntie" class="w-48 h-48 rounded-full mx-auto mb-8 shadow-xl" data-mock-image="true" data-implementation="Replace with actual photo of Auntie">
+            
+            <h2 class="font-serif text-5xl md:text-6xl font-bold text-aunties-green mb-8">Auntie is on a mission</h2>
+            
+            <div class="max-w-4xl mx-auto text-lg text-aunties-brown leading-relaxed mb-8">
+                <p class="mb-6">Meet the heart and soul behind our authentic Indian condiments. Auntie's passion for traditional flavors and innovative combinations has created a line of condiments that bring families together around the dinner table.</p>
+                <p class="mb-6">With decades of experience in her family kitchen and restaurant, Auntie has perfected these recipes to share the authentic tastes of India with the world. Every bottle represents her commitment to quality, tradition, and the joy of sharing good food with loved ones.</p>
+            </div>
+            
+            <button class="bg-aunties-green text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 mb-12">
+                Who is Auntie?
+            </button>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AboutAuntieSection -->
+
+    <!-- Recipes Section -->
+    <!-- @COMPONENT: RecipesSection -->
+    <section class="bg-aunties-cyan py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-5xl md:text-6xl font-bold text-aunties-green text-center mb-4">#EatWithAunties</h2>
+            <p class="text-center text-aunties-green text-xl mb-16">Easy recipes to try at home!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Recipe 1 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <!-- Delicious Indian cheese on toast with colorful toppings and Aunties sauce drizzled on top -->
+                    <img src="https://pixabay.com/get/g8350e06ba2666e1cc2c965838b76dc26a102fcddf97eabf9f397071e5eba8675368e93dfe0c70c4bf11456b4fefaea5fb1b9e23b90c0accff56e7d266a52716c_1280.jpg" alt="Tamarind Cheese on Toast" class="w-full h-64 object-cover" data-mock-image="true" data-implementation="Replace with actual recipe image">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">Greg's Tamarind Cheese on Toast</h3>
+                        <p class="text-aunties-brown mb-4">A simple yet delicious twist on classic cheese toast, elevated with our signature Tamarind sauce.</p>
+                        <button class="text-aunties-green font-bold hover:text-aunties-cyan transition-colors">Try Recipe →</button>
+                    </div>
+                </div>
+                
+                <!-- Recipe 2 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <!-- Traditional Punjabi rajma curry in a beautiful ceramic bowl with rice and garnishes -->
+                    <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Punjabi Rajma" class="w-full h-64 object-cover" data-mock-image="true" data-implementation="Replace with actual recipe image">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">Auntie's Punjabi Rajma for the family</h3>
+                        <p class="text-aunties-brown mb-4">A hearty, comforting kidney bean curry that brings the whole family together.</p>
+                        <button class="text-aunties-green font-bold hover:text-aunties-cyan transition-colors">Try Recipe →</button>
+                    </div>
+                </div>
+                
+                <!-- Recipe 3 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <!-- Creative Indian-style nachos with colorful vegetables and Aunties sauce drizzled over crispy chips -->
+                    <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Indian-style Nachos" class="w-full h-64 object-cover" data-mock-image="true" data-implementation="Replace with actual recipe image">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-aunties-green mb-3">Indian-style Nachos</h3>
+                        <p class="text-aunties-brown mb-4">A fusion delight that combines Mexican favorites with Indian flavors and our signature sauces.</p>
+                        <button class="text-aunties-green font-bold hover:text-aunties-cyan transition-colors">Try Recipe →</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-aunties-green text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
+                    More Recipes
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: RecipesSection -->
+
+    <!-- Store Locator -->
+    <!-- @COMPONENT: StoreLocator -->
+    <section class="bg-aunties-cream py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-5xl md:text-6xl font-bold text-aunties-green text-center mb-16">Find your nearest stockist</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Store Locator Form -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-aunties-green font-bold mb-2">Your location</label>
+                            <input type="text" placeholder="Enter your postcode or city" class="w-full p-4 border-2 border-aunties-green rounded-xl focus:outline-none focus:border-aunties-cyan transition-colors" data-mock="true">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-aunties-green font-bold mb-2">Search radius</label>
+                            <select class="w-full p-4 border-2 border-aunties-green rounded-xl focus:outline-none focus:border-aunties-cyan transition-colors" data-mock="true">
+                                <option>10 mi</option>
+                                <option>25 mi</option>
+                                <option>50 mi</option>
+                                <option>100 mi</option>
+                                <option>200 mi</option>
+                                <option>500 mi</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-aunties-green font-bold mb-2">Results</label>
+                            <select class="w-full p-4 border-2 border-aunties-green rounded-xl focus:outline-none focus:border-aunties-cyan transition-colors" data-mock="true">
+                                <option>20</option>
+                                <option>50</option>
+                                <option>75</option>
+                                <option>100</option>
+                            </select>
+                        </div>
+                        
+                        <button class="w-full bg-aunties-green text-white py-4 rounded-xl font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
+                            Find Stockists
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Map Placeholder -->
+                <div class="bg-gradient-to-br from-aunties-cyan to-blue-400 rounded-3xl shadow-xl p-8 h-96 flex items-center justify-center">
+                    <!-- Map of UK showing store locations with colorful pins -->
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Store Locator Map" class="w-full h-full object-cover rounded-2xl" data-mock-image="true" data-implementation="Integrate with actual store locator map">
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <h3 class="font-serif text-3xl font-bold text-aunties-green mb-4">Fancy stocking Auntie's?</h3>
+                <button class="bg-aunties-cyan text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
+                    Become a Stockist
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: StoreLocator -->
+
+    <!-- Instagram Feed -->
+    <!-- @COMPONENT: InstagramFeed -->
+    <section class="bg-aunties-lime py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-5xl md:text-6xl font-bold text-aunties-green mb-4">Join the Family</h2>
+                <p class="text-aunties-green text-xl mb-4">Follow Us for more behind the scenes & recipes</p>
+                <p class="text-aunties-green text-lg">Use #eatwithaunties to be featured on our feed</p>
+            </div>
+            
+            <!-- Instagram Grid -->
+            <!-- @MAP: instagramPosts.map(post => ( -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <!-- Instagram Post 1 -->
+                <div class="aspect-square bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <!-- Happy customer review showing 5 stars with Aunties sauce bottles -->
+                    <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="5 Star Review" class="w-full h-full object-cover" data-mock-image="true" data-implementation="Connect to actual Instagram feed">
+                </div>
+                
+                <!-- Instagram Post 2 -->
+                <div class="aspect-square bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <!-- Indian crisps advertisement with special offer coming soon text overlay -->
+                    <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Indian Crisps Offer" class="w-full h-full object-cover" data-mock-image="true" data-implementation="Connect to actual Instagram feed">
+                </div>
+                
+                <!-- Instagram Post 3 -->
+                <div class="aspect-square bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <!-- Coventry samosas order promotion with 20% off text and ordering link -->
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Samosas Coventry" class="w-full h-full object-cover" data-mock-image="true" data-implementation="Connect to actual Instagram feed">
+                </div>
+                
+                <!-- Instagram Post 4 -->
+                <div class="aspect-square bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <!-- Ginger coriander sauce bottle with Great Taste Award badge and chicken marinade recipe -->
+                    <img src="https://pixabay.com/get/g22e5ccea1a17bbb76456cb082de0048d7a173a983660912ab213ad8374ebcfcfc2e1b037419fb8735435515b554075607bb62bcbf24d577bb2c8383c136d038c_1280.jpg" alt="Ginger Coriander Award" class="w-full h-full object-cover" data-mock-image="true" data-implementation="Connect to actual Instagram feed">
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+            
+            <div class="text-center">
+                <a href="#" class="inline-flex items-center space-x-2 bg-aunties-green text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
+                    <i class="fab fa-instagram"></i>
+                    <span>Follow @eatwithaunties</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: InstagramFeed -->
+
+    <!-- Newsletter Section -->
+    <!-- @COMPONENT: NewsletterSection -->
+    <section class="bg-gradient-to-r from-aunties-cyan to-aunties-lime py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-aunties-green mb-8">Sign up to our newsletter</h2>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-xl">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <input type="email" placeholder="email@example.com" class="flex-1 p-4 border-2 border-aunties-green rounded-xl focus:outline-none focus:border-aunties-cyan transition-colors" data-mock="true">
+                        <button class="bg-aunties-green text-white px-8 py-4 rounded-xl font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
+                            SUBSCRIBE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: NewsletterSection -->
+
+    <!-- Footer -->
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-aunties-lime py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-bold text-aunties-green text-lg mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">
+                            <i class="fab fa-snapchat text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">
+                            <i class="fab fa-tiktok text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-aunties-green text-sm mt-4">
+                        This is a demo store. Auntie's product shots designed by Switch.
+                    </p>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div>
+                    <h3 class="font-bold text-aunties-green text-lg mb-4">Sauces</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Indian Ketchup</a></li>
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Chilli Mango</a></li>
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Tamarind</a></li>
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Ginger & Coriander</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-aunties-green text-lg mb-4">Info</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Recipes</a></li>
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">About</a></li>
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Search</a></li>
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Returns</a></li>
+                        <li><a href="#" class="text-aunties-green hover:text-aunties-cyan transition-colors">Shipping</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Payment Methods -->
+                <div>
+                    <h3 class="font-bold text-aunties-green text-lg mb-4">We Accept</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="bg-white p-2 rounded">
+                            <i class="fab fa-cc-visa text-blue-600 text-2xl"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded">
+                            <i class="fab fa-cc-mastercard text-red-600 text-2xl"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded">
+                            <i class="fab fa-cc-amex text-blue-500 text-2xl"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded">
+                            <i class="fab fa-cc-paypal text-blue-700 text-2xl"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded">
+                            <i class="fab fa-cc-discover text-orange-500 text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t-2 border-aunties-green pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-aunties-green mb-4 md:mb-0">© 2025, Aunties Condiments. Powered by Shopify</p>
+                <div class="font-serif text-6xl font-black text-aunties-green">
+                    AUNTIES
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // Simple interactive effects
+        (function() {
+            // Add smooth scrolling for anchor links
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+            
+            // Add loading states for buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // TODO: Implement button loading states and API calls
+                    console.log('Button clicked:', this.textContent);
+                });
+            });
+            
+            // Newsletter subscription handler
+            const newsletterForm = document.querySelector('input[type="email"]');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        // TODO: Implement newsletter subscription API
+                        console.log('Newsletter subscription:', this.value);
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

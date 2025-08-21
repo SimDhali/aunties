@@ -111,60 +111,21 @@
     transform: translateY(40px);
   }
   
+  .wavy-cloud-top {
+    position: relative;
+  }
+  
   .wavy-cloud-top::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -75px;
     left: 0;
     right: 0;
-    height: 50px;
-    background: inherit;
-    clip-path: polygon(
-      0% 100%,
-      0% 40%,
-      2.5% 20%,
-      5% 40%,
-      7.5% 20%,
-      10% 40%,
-      12.5% 20%,
-      15% 40%,
-      17.5% 20%,
-      20% 40%,
-      22.5% 20%,
-      25% 40%,
-      27.5% 20%,
-      30% 40%,
-      32.5% 20%,
-      35% 40%,
-      37.5% 20%,
-      40% 40%,
-      42.5% 20%,
-      45% 40%,
-      47.5% 20%,
-      50% 40%,
-      52.5% 20%,
-      55% 40%,
-      57.5% 20%,
-      60% 40%,
-      62.5% 20%,
-      65% 40%,
-      67.5% 20%,
-      70% 40%,
-      72.5% 20%,
-      75% 40%,
-      77.5% 20%,
-      80% 40%,
-      82.5% 20%,
-      85% 40%,
-      87.5% 20%,
-      90% 40%,
-      92.5% 20%,
-      95% 40%,
-      97.5% 20%,
-      100% 40%,
-      100% 100%
-    );
-    transform: translateY(-25px);
+    height: 75px;
+    background: 
+      radial-gradient(circle at 75px 75px, hsl(68, 70%, 75%) 73px, black 73px, black 76px, transparent 75px);
+    background-size: 150px 75px;
+    background-repeat: repeat-x;
   }
   
   .curved-top::before {
@@ -200,6 +161,14 @@
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
   }
+  
+  .free-from-carousel {
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .free-from-carousel:hover {
+    animation-play-state: paused;
+  }
 }
 
 @layer utilities {
@@ -226,5 +195,14 @@
   }
   75% { 
     transform: rotate(-1deg); 
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

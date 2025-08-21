@@ -1,0 +1,54 @@
+{% comment %}
+  Announcement bar section for Shopify theme
+{% endcomment %}
+
+{% if section.settings.show_announcement %}
+  <div class="announcement-bar">
+    <div class="announcement-bar__inner">
+      <p class="announcement-bar__text">
+        {{ section.settings.announcement_text | default: 'Welcome to our store!' }}
+      </p>
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .announcement-bar {
+    background: var(--color-lime);
+    color: var(--color-navy);
+    text-align: center;
+    padding: 0.5rem 0;
+    font-weight: 500;
+  }
+  
+  .announcement-bar__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .announcement-bar__text {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Show announcement bar",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement text",
+      "default": "Welcome to our store!"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,9 @@
+/* Hero section specific overrides (optional).
+   This file is referenced by sections/hero-section.liquid to avoid missing asset errors.
+   Most styles live in assets/aunties-theme.css. Add per-section tweaks here if needed. */
+
+/* Example tweak: adjust bottom lime band spacing on small screens */
+@media (max-width: 640px) {
+  .hero-section .py-8 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+}
+

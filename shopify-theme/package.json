@@ -1,0 +1,12 @@
+{
+  "name": "aunties-eats-shopify-theme",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Shopify theme extracted from the Aunties project",
+  "scripts": {
+    "dev": "shopify theme dev",
+    "push": "shopify theme push",
+    "login": "shopify login --store $SHOPIFY_STORE"
+  }
+}
+

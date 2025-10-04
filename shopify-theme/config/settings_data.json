@@ -1,0 +1,97 @@
+{
+  "current": {
+    "settings": {
+      "color_lime": "#a3e635",
+      "color_navy": "#1e293b",
+      "color_turquoise": "#40e0d0",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "page_width": 1200,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_instagram_link": "",
+      "favicon": null
+    },
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "show_announcement": false,
+          "announcement_text": "Welcome to our store!"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": null
+        }
+      },
+      "main": {
+        "type": "hero-section",
+        "settings": {
+          "background_image": null,
+          "logo_image": null,
+          "logo_alt": "Auntie's Logo",
+          "left_text": "ALL-NATURAL INGREDIENTS",
+          "right_text": "INDIAN INSPIRED"
+        },
+        "blocks": {
+          "carousel-item-1": {
+            "type": "carousel_item",
+            "settings": {
+              "icon_type": "palm-oil",
+              "text": "Palm oil free"
+            }
+          },
+          "carousel-item-2": {
+            "type": "carousel_item",
+            "settings": {
+              "icon_type": "natural",
+              "text": "All natural"
+            }
+          },
+          "carousel-item-3": {
+            "type": "carousel_item",
+            "settings": {
+              "icon_type": "no-nasty",
+              "text": "No nasty stuff"
+            }
+          },
+          "carousel-item-4": {
+            "type": "carousel_item",
+            "settings": {
+              "icon_type": "low-salt",
+              "text": "Low salt"
+            }
+          },
+          "carousel-item-5": {
+            "type": "carousel_item",
+            "settings": {
+              "icon_type": "non-gmo",
+              "text": "Non-GMO"
+            }
+          }
+        },
+        "block_order": [
+          "carousel-item-1",
+          "carousel-item-2",
+          "carousel-item-3",
+          "carousel-item-4",
+          "carousel-item-5"
+        ]
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "show_social_links": true
+        }
+      }
+    },
+    "order": [
+      "announcement-bar",
+      "header",
+      "main",
+      "footer"
+    ]
+  }
+}

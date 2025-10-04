@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "description": "Shopify theme extracted from the Aunties project",
   "scripts": {
-    "dev": "shopify theme dev",
-    "push": "shopify theme push",
+    "dev": "shopify theme dev --path ..",
+    "push": "shopify theme push --path ..",
     "login": "shopify login --store $SHOPIFY_STORE"
   }
 }
-

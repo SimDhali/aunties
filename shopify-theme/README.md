@@ -13,21 +13,21 @@ A custom Shopify theme converted from the original React/Vite application, featu
 ## Installation
 
 ### Option 1: Upload to Shopify Admin
-1. Compress the entire `shopify-theme` folder into a ZIP file
+1. Compress the theme files at the repository root (`assets/`, `config/`, `layout/`, `locales/`, `sections/`, `snippets/`, `templates/`) into a ZIP file
 2. In your Shopify admin, go to **Online Store > Themes**
 3. Click **Add theme > Upload ZIP file**
 4. Select your ZIP file and upload
 
 ### Option 2: Shopify CLI (Recommended for Development)
 1. Install Shopify CLI: `npm install -g @shopify/cli @shopify/theme`
-2. Navigate to the theme directory: `cd shopify-theme`
+2. Navigate to the repository root (theme root): `cd /path/to/aunties`
 3. Connect to your store: `shopify theme dev --store=your-store-name`
 4. Deploy: `shopify theme push`
 
 ## Theme Structure
 
 ```
-shopify-theme/
+aunties/  (theme root)
 ├── assets/
 │   ├── base.css              # Base theme styles
 │   ├── aunties-theme.css     # Custom Aunties Eats styles

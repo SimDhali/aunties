@@ -36,6 +36,6 @@ Requirements
 - npm 9+.
 
 Shopify Theme
-- Theme location: `shopify-theme/`
-- See `shopify-theme/README.md` for structure and usage.
+- Theme files now live at the repository root (`assets/`, `config/`, `layout/`, etc.) so the branch can be connected directly to Shopify.
+- See `shopify-theme/README.md` for additional documentation and CLI usage notes.
 - Optional scripts in `shopify-theme/package.json`: `npm run dev` (preview), `npm run push` (deploy). Requires Shopify CLI (`npm i -g @shopify/cli @shopify/theme`).
